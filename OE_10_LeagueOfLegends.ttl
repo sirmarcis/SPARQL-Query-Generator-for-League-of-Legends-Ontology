@@ -1,0 +1,884 @@
+@prefix : <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/> .
+@prefix sm: <http://www.omg.org/techprocess/ab/SpecificationMetadata/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix lol: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix fibo-fnd-pty-rl: <http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/> .
+@prefix fibo-fnd-qt-qtu: <http://www.omg.org/spec/EDMC-FIBO/FND/Quantities/QuantitiesAndUnits/> .
+@prefix fibo-fnd-utl-av: <http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/> .
+@prefix fibo-fnd-aap-agt: <http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/> .
+@prefix fibo-fnd-aap-ppl: <http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/> .
+@prefix fibo-fnd-acc-cur: <http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/> .
+@prefix fibo-fnd-plc-loc: <http://www.omg.org/spec/EDMC-FIBO/FND/Places/Locations/> .
+@prefix fibo-fnd-plc-vrt: <http://www.omg.org/spec/EDMC-FIBO/FND/Places/VirtualPlaces/> .
+@prefix fibo-fnd-pty-pty: <http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/> .
+@prefix fibo-fnd-rel-rel: <http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/> .
+@base <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/> .
+
+<http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/> rdf:type owl:Ontology ;
+                                                                                  owl:versionIRI <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/OE_9_LeagueOfLegends/> ;
+                                                                                  owl:imports fibo-fnd-qt-qtu: ,
+                                                                                              sm: ,
+                                                                                              fibo-fnd-pty-rl: ,
+                                                                                              fibo-fnd-pty-pty: ,
+                                                                                              fibo-fnd-utl-av: ,
+                                                                                              fibo-fnd-acc-cur: ,
+                                                                                              fibo-fnd-aap-agt: ,
+                                                                                              fibo-fnd-plc-loc: ,
+                                                                                              fibo-fnd-aap-ppl: ,
+                                                                                              fibo-fnd-rel-rel: ,
+                                                                                              fibo-fnd-plc-vrt: ;
+                                                                                  rdfs:label "League of Legends Ontology" ;
+                                                                                  skos:changeNote "added annotations and definitions to all classes and properties, as well as included provenance information"^^xsd:string ;
+                                                                                  dct:abstract "The objective of this ontology is to furnish a plugin to help a new player (secondary actor) learn the basics of playing a champion for the first time.  The basics include providing a list of recommended items to build based on the users, allied, and enemy champions, and a couple basic ability combinations the champion can do or terminology uniquely related to that champion. These suggested builds would continue throughout the game, depending on the amount of gold the user has, as well as the items the user has in their inventory at the time."^^xsd:string ;
+                                                                                  dct:publisher "LeagueOfLegends"^^xsd:string ;
+                                                                                  dct:modified "April 7, 2017"^^xsd:dateTimeStamp ;
+                                                                                  dct:creator "Anders Maraviglia"^^xsd:string ,
+                                                                                              "Anders Maraviglia" ,
+                                                                                              "Hannah De los Santos"^^xsd:string ,
+                                                                                              "Hannah De los Santos" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+dct:alternative rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/audience
+dct:audience rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/coverage
+dct:coverage rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dct:source rdf:type owl:AnnotationProperty .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/adaptedFrom
+fibo-fnd-utl-av:adaptedFrom rdf:type owl:AnnotationProperty .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/explanatoryNote
+fibo-fnd-utl-av:explanatoryNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/GoldCost
+lol:GoldCost rdf:type rdfs:Datatype .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ItemID
+lol:ItemID rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/buildsInto
+lol:buildsInto rdf:type owl:ObjectProperty ;
+               rdfs:domain lol:Item ;
+               rdfs:range lol:Item ;
+               dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+               dct:source "LeagueOfLegends"^^xsd:string ;
+               rdfs:comment "the item(s) that the current item can be upgraded to.  The value of hasTier must be greater than the current value for this relation to be valid. " ;
+               rdfs:label "builds into" ;
+               skos:definition "sequence that items can be built in"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasBaseStatistic
+lol:hasBaseStatistic rdf:type owl:ObjectProperty ;
+                     rdfs:domain lol:Champion ;
+                     rdfs:range lol:Statistic ;
+                     dct:alternative "base stats"^^xsd:string ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     rdfs:label "has base statistic" ;
+                     skos:definition "values that are default for champions"^^xsd:string ;
+                     skos:example "Ashe starts out with 325 movement speed"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasChampion
+lol:hasChampion rdf:type owl:ObjectProperty ;
+                rdfs:domain lol:Team ;
+                rdfs:range lol:Champion ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+                rdfs:label "has champion" ;
+                skos:definition "a player-controlled character, who begins each game at level 1 and has a maximum level of 18"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoalStatistic
+lol:hasGoalStatistic rdf:type owl:ObjectProperty ;
+                     rdfs:domain lol:Champion ;
+                     rdfs:range lol:Statistic ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     dct:source "LeagueOfLegends"^^xsd:string ;
+                     rdfs:label "has goal statistic" ;
+                     skos:definition "statistic that one wants to maximize for a certain champion"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItem
+lol:hasItem rdf:type owl:ObjectProperty ;
+            rdfs:domain lol:Champion ;
+            rdfs:range lol:Item ;
+            dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+            dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+            rdfs:label "has item" ;
+            skos:definition "artifact or object that is from Runeterran history and is featured in-game as an enhancement for a character"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasRole
+lol:hasRole rdf:type owl:ObjectProperty ;
+            rdfs:domain lol:Champion ;
+            rdfs:range fibo-fnd-pty-pty:PartyInRole ;
+            dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+            dct:source "LeagueOfLegends"^^xsd:string ;
+            rdfs:label "has role" ;
+            skos:definition "champion type"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasStatistic
+lol:hasStatistic rdf:type owl:ObjectProperty ;
+                 rdfs:domain lol:Item ;
+                 rdfs:range lol:Statistic ;
+                 dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                 dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+                 rdfs:label "has statistic" ;
+                 skos:definition "one or more statistics that an item gives a champion "^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasUniqueItem
+lol:hasUniqueItem rdf:type owl:ObjectProperty ;
+                  rdfs:domain lol:Champion ;
+                  rdfs:range lol:Item ;
+                  dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                  dct:source "LeagueOfLegends"^^xsd:string ;
+                  rdfs:label """has unique item
+""" ;
+                  skos:definition "item that only one champion can buy"^^xsd:string .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/playsRole
+fibo-fnd-pty-rl:playsRole rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AbilityPower
+lol:AbilityPower rdf:type owl:DatatypeProperty ;
+                 rdfs:domain lol:Statistic ;
+                 rdfs:range xsd:integer ;
+                 dct:alternative "AP"^^xsd:string ;
+                 dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                 dct:source "League of Legends Wiki. (2011, August). Ability Power. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Ability_power"^^xsd:string ;
+                 fibo-fnd-utl-av:explanatoryNote "Can be mitigated with magic resistance."^^xsd:string ;
+                 rdfs:label "ability power" ;
+                 skos:definition "champion statistic that increases the effectiveness of most abilities"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Armor
+lol:Armor rdf:type owl:DatatypeProperty ;
+          rdfs:domain lol:Statistic ;
+          rdfs:range xsd:integer ;
+          dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+          dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+          rdfs:label "armor" ;
+          skos:definition "statistic that reduces the damage done by incoming physical damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ArmorPenetration
+lol:ArmorPenetration rdf:type owl:DatatypeProperty ;
+                     rdfs:domain lol:Statistic ;
+                     rdfs:range xsd:integer ;
+                     dct:alternative "armor pen"^^xsd:string ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     dct:source "League of Legends Wiki. (2011, August). Armor Penetration. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Armor_penetration"^^xsd:string ;
+                     rdfs:label "armor penetration" ;
+                     skos:definition "champion statistic that reduces the effectiveness of a target's armor"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackDamage
+lol:AttackDamage rdf:type owl:DatatypeProperty ;
+                 rdfs:domain lol:Statistic ;
+                 rdfs:range xsd:integer ;
+                 dct:alternative "AD"^^xsd:string ,
+                                 "physical damage"^^xsd:string ;
+                 dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                 dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+                 fibo-fnd-utl-av:explanatoryNote "Can be mitigated with armor."^^xsd:string ;
+                 rdfs:label "attack damage" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackRange
+lol:AttackRange rdf:type owl:DatatypeProperty ;
+                rdfs:domain lol:Statistic ;
+                rdfs:range xsd:integer ;
+                dct:alternative "range"^^xsd:string ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source "League of Legends Wiki. (2011, August). Range. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Range"^^xsd:string ;
+                rdfs:label "attack range" ;
+                skos:definition "measurement that is used to determine how far an autoattack or ability can reach"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackSpeed
+lol:AttackSpeed rdf:type owl:DatatypeProperty ;
+                rdfs:domain lol:Statistic ;
+                rdfs:range xsd:integer ;
+                dct:alternative "AS"^^xsd:string ,
+                                "ASPD"^^xsd:string ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source "League of Legends Wiki. (2011, August). Attack Speed. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Attack_speed"^^xsd:string ;
+                rdfs:label "attack speed" ;
+                skos:definition "frequency that a champion's basic attacks have"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CooldownReduction
+lol:CooldownReduction rdf:type owl:DatatypeProperty ;
+                      rdfs:domain lol:Statistic ;
+                      rdfs:range xsd:integer ;
+                      dct:alternative "CDR"^^xsd:string ;
+                      dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                      dct:source "League of Legends Wiki. (2011, August). Cooldown Reduction. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Cooldown_reduction"^^xsd:string ;
+                      rdfs:label "cooldown reduction" ;
+                      skos:definition "champion statistic that reduces the cooldown of abilities"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeChance
+lol:CriticalStrikeChance rdf:type owl:DatatypeProperty ;
+                         rdfs:domain lol:Statistic ;
+                         rdfs:range xsd:integer ;
+                         dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                         dct:source "League of Legends Wiki. (2011, August). Critical Strike. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Critical_strike"^^xsd:string ;
+                         rdfs:label "critical strike chance" ;
+                         skos:definition "amount of damage that a basic attack deals when it deals twice its normal damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeDamage
+lol:CriticalStrikeDamage rdf:type owl:DatatypeProperty ;
+                         rdfs:domain lol:Statistic ;
+                         rdfs:range xsd:integer ;
+                         rdfs:label "critical strike damage" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Health
+lol:Health rdf:type owl:DatatypeProperty ;
+           rdfs:domain lol:Statistic ;
+           rdfs:range xsd:integer ;
+           dct:alternative "HP"^^xsd:string ;
+           dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+           dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+           rdfs:label "health" ;
+           skos:definition "damage amount that a champion can take before dying"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/HealthRegeration
+lol:HealthRegeration rdf:type owl:DatatypeProperty ;
+                     rdfs:domain lol:Statistic ;
+                     rdfs:range xsd:integer ;
+                     dct:alternative "HP5"^^xsd:string ,
+                                     "regeneration"^^xsd:string ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+                     rdfs:label "health regeration" ;
+                     skos:definition "HP that is regained every five seconds"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/LifeSteal
+lol:LifeSteal rdf:type owl:DatatypeProperty ;
+              rdfs:domain lol:Statistic ;
+              rdfs:range xsd:integer ;
+              dct:alternative "LS"^^xsd:string ;
+              dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+              dct:source "League of Legends Wiki. (2011, August). Life steal. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Life_steal"^^xsd:string ;
+              rdfs:label "life steal" ;
+              skos:definition "offensive statistic that restores health to the wielder on all basic attacks"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicPenetration
+lol:MagicPenetration rdf:type owl:DatatypeProperty ;
+                     rdfs:domain lol:Statistic ;
+                     rdfs:range xsd:integer ;
+                     dct:alternative "magic pen"^^xsd:string ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     dct:source "League of Legends Wiki. (2011, August). Magic Penetration. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Magic_penetration"^^xsd:string ;
+                     rdfs:label "magic penetration" ;
+                     skos:definition "champion statistic which allows the magic damage done from their abilities, enhanced attacks, etc. to ignore some or all of a target's magic resistance"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicResistance
+lol:MagicResistance rdf:type owl:DatatypeProperty ;
+                    rdfs:domain lol:Statistic ;
+                    rdfs:range xsd:integer ;
+                    dct:alternative "MR"^^xsd:string ;
+                    dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                    dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                    rdfs:label "magic resistance" ;
+                    skos:definition "statistic that reduces the damage done by incoming magic damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mana
+lol:Mana rdf:type owl:DatatypeProperty ;
+         rdfs:domain lol:Statistic ;
+         rdfs:range xsd:integer ;
+         dct:alternative "MP"^^xsd:string ;
+         dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+         dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+         rdfs:label "mana" ;
+         skos:definition "statistic indicating ability-casting capacity"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ManaRegeneration
+lol:ManaRegeneration rdf:type owl:DatatypeProperty ;
+                     rdfs:domain lol:Statistic ;
+                     rdfs:range xsd:integer ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     rdfs:label "mana regeneration" ;
+                     skos:definition "mana that is regained every five seconds"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementSpeed
+lol:MovementSpeed rdf:type owl:DatatypeProperty ;
+                  rdfs:domain lol:Statistic ;
+                  rdfs:range xsd:integer ;
+                  dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                  dct:source "League of Legends Wiki. (2011, August). Movement Speed. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Movement_speed"^^xsd:string ;
+                  rdfs:label "movement speed" ;
+                  skos:definition "champion statistic that represents the rate at which a champion travels across a map"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SpellVamp
+lol:SpellVamp rdf:type owl:DatatypeProperty ;
+              rdfs:domain lol:Statistic ;
+              rdfs:range xsd:integer ;
+              rdfs:label "spell vamp" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tenacity
+lol:Tenacity rdf:type owl:DatatypeProperty ;
+             rdfs:domain lol:Statistic ;
+             rdfs:range xsd:integer ;
+             rdfs:label "tenacity" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasAdvancedTier
+lol:hasAdvancedTier rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf lol:hasLegendaryTier ;
+                    rdfs:domain lol:Item ;
+                    rdfs:range xsd:integer ;
+                    dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                    dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                    skos:definition "item that has a specified recipe that consists of basic items and a combine cost"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasBasicTier
+lol:hasBasicTier rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf lol:hasAdvancedTier ;
+                 rdfs:domain lol:Item ;
+                 rdfs:range xsd:integer ;
+                 dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                 dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                 skos:definition "item that does not require any other items to be purchased"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasDamageTypeString
+lol:hasDamageTypeString rdf:type owl:DatatypeProperty ;
+                        rdfs:domain fibo-fnd-pty-pty:PartyInRole ;
+                        rdfs:range xsd:string ;
+                        dct:source "LeagueOfLegends"^^xsd:string ;
+                        rdfs:label "has damage type string" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoldCost
+lol:hasGoldCost rdf:type owl:DatatypeProperty ;
+                rdfs:domain lol:Item ;
+                rdfs:range xsd:integer ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source "League of Legends Wiki. (2011, August). Gold. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Gold"^^xsd:string ;
+                rdfs:label "has gold cost" ;
+                skos:definition "the cost (in the in-game currency of gold) that the current instance of the item class has to buy it"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier
+lol:hasItemIdentifier rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain lol:Item ;
+                      rdfs:range xsd:integer ;
+                      dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                      dct:source "LeagueOfLegends"^^xsd:string ;
+                      rdfs:label "has item identifier" ;
+                      skos:definition "the uniquely identifying integer value of an instance of the item class"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLegendaryTier
+lol:hasLegendaryTier rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf lol:hasMythicalTier ;
+                     rdfs:domain lol:Item ;
+                     rdfs:range xsd:integer ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     dct:source "LeagueOfLegends"^^xsd:string ;
+                     skos:definition "item that has a specified recipe that consists of at least one advanced item and a combine cost"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood
+lol:hasLikelihood rdf:type owl:DatatypeProperty ;
+                  rdfs:domain fibo-fnd-pty-pty:PartyInRole ;
+                  rdfs:range xsd:integer ;
+                  dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                  dct:source "LeagueOfLegends"^^xsd:string ;
+                  rdfs:label "has likelihood" ;
+                  skos:definition percentage that a champion will play a certain role for any given game .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMaximumStacks
+lol:hasMaximumStacks rdf:type owl:DatatypeProperty ;
+                     rdfs:domain lol:Item ;
+                     rdfs:range xsd:integer ;
+                     dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                     dct:source "League of Legends Wiki. (2011, August). Stack. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Stack"^^xsd:string ;
+                     rdfs:comment "an item can optionally have a property that stacks up to this maximum.  If the item does not stack, this value is -1.  " ;
+                     rdfs:label "has maximum stacks" ;
+                     skos:definition "maximum value that instance of an effect which can multiply itself several times can have"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMythicalTier
+lol:hasMythicalTier rdf:type owl:DatatypeProperty ;
+                    rdfs:domain lol:Item ;
+                    rdfs:range xsd:integer ;
+                    dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                    dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                    skos:definition "item that has a specified recipe that consists of at least one legendary item and a combine cost"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTeamDamageType
+lol:hasTeamDamageType rdf:type owl:DatatypeProperty ;
+                      rdfs:domain lol:Team ;
+                      rdfs:range xsd:string ;
+                      dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                      rdfs:label "has team damage type" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTier
+lol:hasTier rdf:type owl:DatatypeProperty ;
+            rdfs:domain lol:Item ;
+            rdfs:range xsd:integer ;
+            dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+            dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+            rdfs:comment """All items are of tiers 1 through 4, where:
+tier 1: Basic item
+tier 2: Advanced item
+tier 3: legendary item
+tier 4: mythical item""" ;
+            rdfs:label "has tier" ;
+            skos:definition "one of four categories that an item is divided into"^^xsd:string .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/hasName
+fibo-fnd-aap-agt:hasName rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin
+lol:Assassin rdf:type owl:Class ;
+             rdfs:subClassOf fibo-fnd-pty-pty:PartyInRole ;
+             dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+             dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+             rdfs:label "assassin" ;
+             skos:definition "champion type that is used for burst damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackItem
+lol:AttackItem rdf:type owl:Class ;
+               rdfs:subClassOf lol:Item ;
+               dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+               dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+               rdfs:label "attack item" ;
+               skos:definition "item that has physical damage statistics"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion
+lol:Champion rdf:type owl:Class ;
+             rdfs:subClassOf lol:Character ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty fibo-fnd-pty-rl:playsRole ;
+                               owl:someValuesFrom fibo-fnd-pty-pty:PartyInRole
+                             ] ;
+             owl:disjointWith lol:Item ;
+             dct:audience "beginner"^^xsd:string ;
+             dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+             dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+             fibo-fnd-utl-av:explanatoryNote "These grow in power with each level."^^xsd:string ;
+             rdfs:label "champion" ;
+             skos:definition "a player-controlled character, who begins each game at level 1 and has a maximum level of 18"^^xsd:string ;
+             skos:example "Azir is an example of a champion"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ChampionSpecific
+lol:ChampionSpecific rdf:type owl:Class ;
+                     rdfs:label "champion-specific" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Character
+lol:Character rdf:type owl:Class ;
+              rdfs:subClassOf fibo-fnd-aap-agt:AutonomousAgent ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty fibo-fnd-aap-agt:hasName ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ;
+              fibo-fnd-utl-av:adaptedFrom "http://dictionary.cambridge.org/us/dictionary/english/character"^^xsd:anyURI ;
+              rdfs:label "character" ;
+              skos:definition "a fictitious person represented in a movie, play, or story"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ConsumableItem
+lol:ConsumableItem rdf:type owl:Class ;
+                   rdfs:subClassOf lol:ToolItem ;
+                   owl:disjointWith lol:TrinketItem ;
+                   dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                   dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                   rdfs:label "consumable item" ;
+                   skos:definition "item that can be activated for some temporary effects"^^xsd:string ;
+                   skos:example "elixer of iron is an example of a consumable item"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/DefenseItem
+lol:DefenseItem rdf:type owl:Class ;
+                rdfs:subClassOf lol:Item ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                rdfs:label "defense item" ;
+                skos:definition "item that has defensive statistics"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter
+lol:Fighter rdf:type owl:Class ;
+            rdfs:subClassOf fibo-fnd-pty-pty:PartyInRole ;
+            dct:alternative "bruiser"^^xsd:string ;
+            dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+            dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+            rdfs:label "fighter" ;
+            skos:definition "champion type that is main attacking and usually melee"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item
+lol:Item rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty lol:hasGoldCost ;
+                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty lol:hasItemIdentifier ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty lol:hasTier ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty lol:hasItemIdentifier ;
+                           owl:maxQualifiedCardinality "179"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty lol:hasTier ;
+                           owl:maxQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ;
+         dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+         rdfs:label "item" ;
+         skos:definition "artifact or object that is from Runeterran history and is featured in-game as an enhancement for a character"^^xsd:string ;
+         skos:example "Corrupting Potion is an example of an item."^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage
+lol:Mage rdf:type owl:Class ;
+         rdfs:subClassOf fibo-fnd-pty-pty:PartyInRole ;
+         dct:alternative "AP Carry"^^xsd:string ;
+         dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+         dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+         fibo-fnd-utl-av:explanatoryNote "They are typically ranged, and have low defenses to balance out their offensive capability."^^xsd:string ;
+         rdfs:label "mage" ;
+         skos:definition "champion type that are powerful spellcasters who use their abilities to deal magic damage and disrupt enemies "^^xsd:string ;
+         skos:example "Annie is a mage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicItem
+lol:MagicItem rdf:type owl:Class ;
+              rdfs:subClassOf lol:Item ;
+              dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+              dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+              rdfs:label "magic item" ;
+              skos:definition "item that has magic damage statistics"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman
+lol:Marksman rdf:type owl:Class ;
+             rdfs:subClassOf fibo-fnd-pty-pty:PartyInRole ;
+             dct:alternative "ADC"^^xsd:string ,
+                             "ad carry"^^xsd:string ;
+             dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+             dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+             fibo-fnd-utl-av:explanatoryNote "They are characterized by abilities and passives that augment or complement their basic attacks."^^xsd:string ;
+             rdfs:label "marksman" ;
+             skos:definition "champion type that primarily uses their ranged basic attacks to deal sustained physical damage to single targets"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementItem
+lol:MovementItem rdf:type owl:Class ;
+                 rdfs:subClassOf lol:Item ;
+                 dct:alternative "boots"^^xsd:dateTimeStamp ;
+                 dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                 dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                 rdfs:label "movement item" ;
+                 skos:definition "item that boosts the movement speed statistic"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Player
+lol:Player rdf:type owl:Class ;
+           rdfs:subClassOf fibo-fnd-aap-ppl:Person ;
+           dct:alternative "summoner"^^xsd:string ;
+           dct:audience "beginner"^^xsd:string ;
+           fibo-fnd-utl-av:adaptedFrom "https://www.merriam-webster.com/dictionary/player"^^xsd:anyURI ;
+           fibo-fnd-utl-av:explanatoryNote "Has levels, for which the maximum is 30."^^xsd:string ;
+           rdfs:label "player" ;
+           skos:definition "a person who plays a game"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/StarterItem
+lol:StarterItem rdf:type owl:Class ;
+                rdfs:subClassOf lol:Item ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                rdfs:label "starter item" ;
+                skos:definition "a type of item that is good to buy first in a game"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic
+lol:Statistic rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:AbilityPower ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:Armor ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:ArmorPenetration ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:AttackDamage ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:AttackRange ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:AttackSpeed ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:CooldownReduction ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:CriticalStrikeChance ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:CriticalStrikeDamage ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:Health ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:HealthRegeration ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:LifeSteal ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:MagicPenetration ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:MagicResistance ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:Mana ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:ManaRegeneration ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:MovementSpeed ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:SpellVamp ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:Tenacity ;
+                                owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:AttackSpeed ;
+                                owl:maxQualifiedCardinality "250"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:CooldownReduction ;
+                                owl:maxQualifiedCardinality "45"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:CriticalStrikeChance ;
+                                owl:maxQualifiedCardinality "100"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty lol:CriticalStrikeDamage ;
+                                owl:maxQualifiedCardinality "250"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ;
+              dct:alternative "stat"^^xsd:string ;
+              dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+              dct:source "LeagueOfLegends"^^xsd:string ;
+              rdfs:label "statistic" ;
+              skos:definition "number that indicates how well a champion can do a certain thing"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion
+lol:SupportingChampion rdf:type owl:Class ;
+                       rdfs:subClassOf fibo-fnd-pty-pty:PartyInRole ;
+                       dct:alternative "support"^^xsd:string ;
+                       dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                       dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+                       rdfs:label "supporting champion" ;
+                       skos:definition "champion type that disrupts enemies and protects allies"^^xsd:string ;
+                       skos:example "Thresh is a support champion"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank
+lol:Tank rdf:type owl:Class ;
+         rdfs:subClassOf fibo-fnd-pty-pty:PartyInRole ;
+         dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+         dct:source "T. A. Tomato. (2016, December 6). LoL Essentials | League of Legends New Player/Beginner Guide (63rd ed.) [Online]. Available:http://www.mobafire.com/league-of-legends/build/lol-essentials-league-of-legends-new-player-beginner-guide-371292"^^xsd:string ;
+         rdfs:label "tank" ;
+         skos:definition "champion type that has high health and low damage ouput"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team
+lol:Team rdf:type owl:Class ;
+         dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+         dct:source "LeagueOfLegends"^^xsd:string ;
+         rdfs:label "team" ;
+         skos:definition "group that is comprised of five unique champions working together"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ToolItem
+lol:ToolItem rdf:type owl:Class ;
+             rdfs:subClassOf lol:Item ;
+             dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+             dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+             rdfs:label "tool item" ;
+             skos:definition "item category that encompasses trinket and consumable items"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Transformation
+lol:Transformation rdf:type owl:Class ;
+                   dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                   dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/TrinketItem
+lol:TrinketItem rdf:type owl:Class ;
+                rdfs:subClassOf lol:ToolItem ;
+                dct:alternative "trinket"^^xsd:string ,
+                                "ward"^^xsd:string ;
+                dct:coverage "League of Legends Player and Plugin"^^xsd:string ;
+                dct:source League of Legends Wiki. (2011, August). Items. [Online]. Available: http://leagueoflegends.wikia.com/wiki/Item ;
+                rdfs:label "trinket item" ;
+                skos:definition "items that take up the single trinket slot in a players inventory, and provide vision of the map"^^xsd:string .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent
+fibo-fnd-aap-agt:AutonomousAgent rdf:type owl:Class .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person
+fibo-fnd-aap-ppl:Person rdf:type owl:Class .
+
+
+###  http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole
+fibo-fnd-pty-pty:PartyInRole rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty lol:hasLikelihood ;
+                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:integer
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty lol:hasLikelihood ;
+                                               owl:maxQualifiedCardinality "100"^^xsd:nonNegativeInteger ;
+                                               owl:onDataRange xsd:integer
+                                             ] .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

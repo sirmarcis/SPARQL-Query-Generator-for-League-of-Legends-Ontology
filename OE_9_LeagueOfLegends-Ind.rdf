@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+	<!ENTITY lol "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" >
+    <!ENTITY lol-ind "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" >
+]>
+
+<rdf:RDF xmlns="&lol-ind;#"
+     xml:base="&lol-ind;"
+     xmlns:lol="&lol;"
+     xmlns:rdfs="&rdfs;"
+     xmlns:terms="&dct;"
+     xmlns:xsd="&xsd;"
+     xmlns:owl="&owl;"
+     xmlns:lol-ind="&lol-ind;#"
+     xmlns:rdf="&rdf;"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:skos="&skos;">
+    <owl:Ontology rdf:about="&lol-ind;">
+        <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/OE_9_LeagueOfLegends-Ind"/>
+        <owl:imports rdf:resource="&lol;"/>
+        <terms:modified rdf:datatype="&xsd;dateTimeStamp">April 7, 2017</terms:modified>
+        <rdfs:label>league of legends individuals ontology</rdfs:label>
+        <terms:creator rdf:datatype="&xsd;string">Anders Maraviglia</terms:creator>
+        <terms:abstract rdf:datatype="&xsd;string">The objective of this ontology is to provide examples and individuals for the ontology to help a new player learn the basics of playing a champion for the first time.  The basics include providing a list of recommended items to build based on the users, allied, and enemy champions, and a couple basic ability combinations the champion can do or terminology uniquely related to that champion. These suggested builds would continue throughout the game, depending on the amount of gold the user has, as well as the items the user has in their inventory at the time.</terms:abstract>
+        <terms:publisher rdf:datatype="&xsd;string">LeagueOfLegends</terms:publisher>
+        <skos:changeNote>added annotations and definitions all classes and properties, added annotaitons to ontology header</skos:changeNote>
+        <terms:creator rdf:datatype="&xsd;string">Hannah De los Santos</terms:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &dct;alternative -->
+
+    <owl:AnnotationProperty rdf:about="&dct;alternative"/>
+    
+
+
+    <!-- &dct;coverage -->
+
+    <owl:AnnotationProperty rdf:about="&dct;coverage"/>
+    
+
+
+    <!-- &dct;source -->
+
+    <owl:AnnotationProperty rdf:about="&dct;source"/>
+    
+
+
+    <!-- &skos;definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol;hasChampion -->
+
+    <owl:ObjectProperty rdf:about="&lol;hasChampion"/>
+    
+
+
+    <!-- &lol;hasRole -->
+
+    <owl:ObjectProperty rdf:about="&lol;hasRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol;hasDamageTypeString -->
+
+    <owl:DatatypeProperty rdf:about="&lol;hasDamageTypeString"/>
+    
+
+
+    <!-- &lol;hasLikelihood -->
+
+    <owl:DatatypeProperty rdf:about="&lol;hasLikelihood"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol;Assassin -->
+
+    <owl:Class rdf:about="&lol;Assassin"/>
+    
+
+
+    <!-- &lol;Champion -->
+
+    <owl:Class rdf:about="&lol;Champion"/>
+    
+
+
+    <!-- &lol;Fighter -->
+
+    <owl:Class rdf:about="&lol;Fighter"/>
+    
+
+
+    <!-- &lol;Mage -->
+
+    <owl:Class rdf:about="&lol;Mage"/>
+    
+
+
+    <!-- &lol;Marksman -->
+
+    <owl:Class rdf:about="&lol;Marksman"/>
+    
+
+
+    <!-- &lol;SupportingChampion -->
+
+    <owl:Class rdf:about="&lol;SupportingChampion"/>
+    
+
+
+    <!-- &lol;Tank -->
+
+    <owl:Class rdf:about="&lol;Tank"/>
+    
+
+
+    <!-- &lol;Team -->
+
+    <owl:Class rdf:about="&lol;Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol-ind;Azir -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Azir">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;AzirMageLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;AzirMarksmanLikelihood"/>
+        <terms:alternative rdf:datatype="&xsd;string">birdman</terms:alternative>
+        <terms:alternative rdf:datatype="&xsd;string">emporer</terms:alternative>
+        <terms:alternative rdf:datatype="&xsd;string">shurima</terms:alternative>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>azir</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">ranged mage, does DPS magic damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;AzirMageLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;AzirMageLikelihood">
+        <rdf:type rdf:resource="&lol;Mage"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">70</lol:hasLikelihood>
+        <rdfs:label>azir mage likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;AzirMarksmanLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;AzirMarksmanLikelihood">
+        <rdf:type rdf:resource="&lol;Marksman"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">30</lol:hasLikelihood>
+        <rdfs:label>azir marksman likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Garen -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Garen">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;GarenFighterLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;GarenTankLikelihood"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>garen</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">melee tank, does physical damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;GarenFighterLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;GarenFighterLikelihood">
+        <rdf:type rdf:resource="&lol;Fighter"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">20</lol:hasLikelihood>
+        <rdfs:label>garen fighter likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;GarenTankLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;GarenTankLikelihood">
+        <rdf:type rdf:resource="&lol;Tank"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">NoneDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">80</lol:hasLikelihood>
+        <rdfs:label>garen tank likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Jinx -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Jinx">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;JinxMarksmanLikelihood"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>jinx</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">marksman, adc, does physical damage through autoattacks, hypercarry</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;JinxMarksmanLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;JinxMarksmanLikelihood">
+        <rdf:type rdf:resource="&lol;Marksman"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">100</lol:hasLikelihood>
+        <rdfs:label>jinx marksman likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Nidalee -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Nidalee">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;NidaleeAssassinLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;NidaleeMageLikelihood"/>
+        <terms:alternative rdf:datatype="&xsd;string">nid</terms:alternative>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>nidalee</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">ranged and melee mage, high burst damage, commonly a jungler</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;NidaleeAssassinLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;NidaleeAssassinLikelihood">
+        <rdf:type rdf:resource="&lol;Assassin"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">40</lol:hasLikelihood>
+        <rdfs:label>nidalee assassin likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;NidaleeMageLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;NidaleeMageLikelihood">
+        <rdf:type rdf:resource="&lol;Mage"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">60</lol:hasLikelihood>
+        <rdfs:label>nidalee mage likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;TeamOne -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;TeamOne">
+        <rdf:type rdf:resource="&lol;Team"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Azir"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Garen"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Jinx"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Nidalee"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Thresh"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <rdfs:label>team one</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Thresh -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Thresh">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;ThreshFighterLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;ThreshSupportLikelihood"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>thresh</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">melee support, single target cc, physical damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;ThreshFighterLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;ThreshFighterLikelihood">
+        <rdf:type rdf:resource="&lol;Fighter"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">20</lol:hasLikelihood>
+        <rdfs:label>thresh fighter likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;ThreshSupportLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;ThreshSupportLikelihood">
+        <rdf:type rdf:resource="&lol;SupportingChampion"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">NoneDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">80</lol:hasLikelihood>
+        <rdfs:label>thresh support likelihood</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

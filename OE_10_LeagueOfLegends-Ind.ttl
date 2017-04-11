@@ -1,0 +1,251 @@
+@prefix : <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix lol: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix lol-ind: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/#> .
+@base <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/> .
+
+<http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/> rdf:type owl:Ontology ;
+                                                                                      owl:versionIRI <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/OE_9_LeagueOfLegends-Ind> ;
+                                                                                      owl:imports lol: ;
+                                                                                      terms:abstract "The objective of this ontology is to provide examples and individuals for the ontology to help a new player learn the basics of playing a champion for the first time.  The basics include providing a list of recommended items to build based on the users, allied, and enemy champions, and a couple basic ability combinations the champion can do or terminology uniquely related to that champion. These suggested builds would continue throughout the game, depending on the amount of gold the user has, as well as the items the user has in their inventory at the time."^^xsd:string ;
+                                                                                      terms:publisher "LeagueOfLegends"^^xsd:string ;
+                                                                                      rdfs:label "league of legends individuals ontology" ;
+                                                                                      skos:changeNote "added annotations and definitions all classes and properties, added annotaitons to ontology header" ;
+                                                                                      terms:modified "April 7, 2017"^^xsd:dateTimeStamp ;
+                                                                                      terms:creator "Anders Maraviglia"^^xsd:string ,
+                                                                                                    "Hannah De los Santos"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/alternative
+terms:alternative rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/coverage
+terms:coverage rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+terms:source rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasChampion
+lol:hasChampion rdf:type owl:ObjectProperty .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasRole
+lol:hasRole rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasDamageTypeString
+lol:hasDamageTypeString rdf:type owl:DatatypeProperty .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood
+lol:hasLikelihood rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin
+lol:Assassin rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion
+lol:Champion rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter
+lol:Fighter rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage
+lol:Mage rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman
+lol:Marksman rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion
+lol:SupportingChampion rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank
+lol:Tank rdf:type owl:Class .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team
+lol:Team rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Azir
+:Azir rdf:type owl:NamedIndividual ,
+               lol:Champion ;
+      lol:hasRole :AzirMageLikelihood ,
+                  :AzirMarksmanLikelihood ;
+      terms:alternative "birdman"^^xsd:string ,
+                        "emporer"^^xsd:string ,
+                        "shurima"^^xsd:string ;
+      terms:coverage "League of Legends Player and Plugin"^^xsd:string ;
+      terms:source "Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/"^^xsd:string ;
+      rdfs:label "azir" ;
+      skos:definition "ranged mage, does DPS magic damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMageLikelihood
+:AzirMageLikelihood rdf:type owl:NamedIndividual ,
+                             lol:Mage ;
+                    lol:hasDamageTypeString "MagicDamageType"^^xsd:string ;
+                    lol:hasLikelihood 70 ;
+                    rdfs:label "azir mage likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMarksmanLikelihood
+:AzirMarksmanLikelihood rdf:type owl:NamedIndividual ,
+                                 lol:Marksman ;
+                        lol:hasDamageTypeString "MagicDamageType"^^xsd:string ;
+                        lol:hasLikelihood 30 ;
+                        rdfs:label "azir marksman likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Garen
+:Garen rdf:type owl:NamedIndividual ,
+                lol:Champion ;
+       lol:hasRole :GarenFighterLikelihood ,
+                   :GarenTankLikelihood ;
+       terms:coverage "League of Legends Player and Plugin"^^xsd:string ;
+       terms:source "Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/"^^xsd:string ;
+       rdfs:label "garen" ;
+       skos:definition "melee tank, does physical damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenFighterLikelihood
+:GarenFighterLikelihood rdf:type owl:NamedIndividual ,
+                                 lol:Fighter ;
+                        lol:hasDamageTypeString "AttackDamageType"^^xsd:string ;
+                        lol:hasLikelihood 20 ;
+                        rdfs:label "garen fighter likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenTankLikelihood
+:GarenTankLikelihood rdf:type owl:NamedIndividual ,
+                              lol:Tank ;
+                     lol:hasDamageTypeString "NoneDamageType"^^xsd:string ;
+                     lol:hasLikelihood 80 ;
+                     rdfs:label "garen tank likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Jinx
+:Jinx rdf:type owl:NamedIndividual ,
+               lol:Champion ;
+      lol:hasRole :JinxMarksmanLikelihood ;
+      terms:coverage "League of Legends Player and Plugin"^^xsd:string ;
+      terms:source "Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/"^^xsd:string ;
+      rdfs:label "jinx" ;
+      skos:definition "marksman, adc, does physical damage through autoattacks, hypercarry"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/JinxMarksmanLikelihood
+:JinxMarksmanLikelihood rdf:type owl:NamedIndividual ,
+                                 lol:Marksman ;
+                        lol:hasDamageTypeString "AttackDamageType"^^xsd:string ;
+                        lol:hasLikelihood 100 ;
+                        rdfs:label "jinx marksman likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Nidalee
+:Nidalee rdf:type owl:NamedIndividual ,
+                  lol:Champion ;
+         lol:hasRole :NidaleeAssassinLikelihood ,
+                     :NidaleeMageLikelihood ;
+         terms:alternative "nid"^^xsd:string ;
+         terms:coverage "League of Legends Player and Plugin"^^xsd:string ;
+         terms:source "Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/"^^xsd:string ;
+         rdfs:label "nidalee" ;
+         skos:definition "ranged and melee mage, high burst damage, commonly a jungler"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeAssassinLikelihood
+:NidaleeAssassinLikelihood rdf:type owl:NamedIndividual ,
+                                    lol:Assassin ;
+                           lol:hasDamageTypeString "MagicDamageType"^^xsd:string ;
+                           lol:hasLikelihood 40 ;
+                           rdfs:label "nidalee assassin likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeMageLikelihood
+:NidaleeMageLikelihood rdf:type owl:NamedIndividual ,
+                                lol:Mage ;
+                       lol:hasDamageTypeString "MagicDamageType"^^xsd:string ;
+                       lol:hasLikelihood 60 ;
+                       rdfs:label "nidalee mage likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TeamOne
+:TeamOne rdf:type owl:NamedIndividual ,
+                  lol:Team ;
+         lol:hasChampion :Azir ,
+                         :Garen ,
+                         :Jinx ,
+                         :Nidalee ,
+                         :Thresh ;
+         terms:coverage "League of Legends Player and Plugin"^^xsd:string ;
+         rdfs:label "team one" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Thresh
+:Thresh rdf:type owl:NamedIndividual ,
+                 lol:Champion ;
+        lol:hasRole :ThreshFighterLikelihood ,
+                    :ThreshSupportLikelihood ;
+        terms:coverage "League of Legends Player and Plugin"^^xsd:string ;
+        terms:source "Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/"^^xsd:string ;
+        rdfs:label "thresh" ;
+        skos:definition "melee support, single target cc, physical damage"^^xsd:string .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshFighterLikelihood
+:ThreshFighterLikelihood rdf:type owl:NamedIndividual ,
+                                  lol:Fighter ;
+                         lol:hasDamageTypeString "AttackDamageType"^^xsd:string ;
+                         lol:hasLikelihood 20 ;
+                         rdfs:label "thresh fighter likelihood" .
+
+
+###  http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshSupportLikelihood
+:ThreshSupportLikelihood rdf:type owl:NamedIndividual ,
+                                  lol:SupportingChampion ;
+                         lol:hasDamageTypeString "NoneDamageType"^^xsd:string ;
+                         lol:hasLikelihood 80 ;
+                         rdfs:label "thresh support likelihood" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

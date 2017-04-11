@@ -1,0 +1,1002 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:fibo-fnd-rel-rel="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:fibo-fnd-acc-cur="http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/"
+     xmlns:lol="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:fibo-fnd-aap-agt="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"
+     xmlns:fibo-fnd-aap-ppl="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:fibo-fnd-plc-loc="http://www.omg.org/spec/EDMC-FIBO/FND/Places/Locations/"
+     xmlns:fibo-fnd-pty-rl="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/"
+     xmlns:fibo-fnd-pty-pty="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/"
+     xmlns:fibo-fnd-utl-av="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/"
+     xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata/"
+     xmlns:fibo-fnd-qt-qtu="http://www.omg.org/spec/EDMC-FIBO/FND/Quantities/QuantitiesAndUnits/"
+     xmlns:fibo-fnd-plc-vrt="http://www.omg.org/spec/EDMC-FIBO/FND/Places/VirtualPlaces/">
+    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/">
+        <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/OE_8_LeagueOfLegends/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Quantities/QuantitiesAndUnits/"/>
+        <owl:imports rdf:resource="http://www.omg.org/techprocess/ab/SpecificationMetadata/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Places/Locations/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"/>
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Places/VirtualPlaces/"/>
+        <rdfs:label>League of Legends Ontology</rdfs:label>
+        <dct:creator>Anders Maraviglia</dct:creator>
+        <dct:creator>Hannah De los Santos</dct:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/adaptedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/adaptedFrom"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/GoldCost -->
+
+    <rdfs:Datatype rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/GoldCost"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ItemID -->
+
+    <rdfs:Datatype rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ItemID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/buildsInto -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/buildsInto">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:comment>the item(s) that the current item can be upgraded to.  The value of hasTier must be greater than the current value for this relation to be valid. </rdfs:comment>
+        <rdfs:label>builds into</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasBaseStatistic -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasBaseStatistic">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:label>has base statistic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasChampion -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasChampion">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <rdfs:label>has champion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoalStatistic -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoalStatistic">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:label>has goal statistic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItem">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>has item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasRole">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <rdfs:range rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasStatistic -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasStatistic">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:comment>One or more statistics that an item gives a champion </rdfs:comment>
+        <rdfs:label>has statistic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasUniqueItem -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasUniqueItem">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>has unique item
+</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasUniqueStatistic -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasUniqueStatistic">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:comment>this statistic cannot be applied to a champion more than once in any game</rdfs:comment>
+        <rdfs:label>has unique statistic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/playsRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/playsRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AbilityPower -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AbilityPower">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>ability power</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Armor -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Armor">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>armor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ArmorPenetration -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ArmorPenetration">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>armor penetration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackDamage -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackDamage">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>attack damage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackRange -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackRange">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>attack range</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackSpeed">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>attack speed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CooldownReduction -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CooldownReduction">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>cooldown reduction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeChance -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeChance">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>critical strike chance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeDamage -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeDamage">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>critical strike damage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Health -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Health">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>health</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/HealthRegeration -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/HealthRegeration">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>health regeration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/LifeSteal -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/LifeSteal">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>life steal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicPenetration -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicPenetration">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>magic penetration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicResistance -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicResistance">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>magic resistance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mana -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mana">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>mana</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ManaRegeneration -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ManaRegeneration">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>mana regeneration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementSpeed">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>movement speed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SpellVamp -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SpellVamp">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>spell vamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tenacity -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tenacity">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>tenacity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasAdvancedTier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasAdvancedTier">
+        <rdfs:subPropertyOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLegendaryTier"/>
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasBasicTier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasBasicTier">
+        <rdfs:subPropertyOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasAdvancedTier"/>
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasDamageTypeString -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasDamageTypeString">
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has damage type string</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoldCost -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoldCost">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>the cost (in the in-game currency of gold) that the current instance of the item class has to buy it.</rdfs:comment>
+        <rdfs:label>has gold cost</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>the uniquely identifying integer value of an instance of the item class</rdfs:comment>
+        <rdfs:label>has item identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLegendaryTier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLegendaryTier">
+        <rdfs:subPropertyOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMythicalTier"/>
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood">
+        <rdfs:domain rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has likelihood</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMaximumStacks -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMaximumStacks">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>an item can optionally have a property that stacks up to this maximum.  If the item does not stack, this value is -1.  </rdfs:comment>
+        <rdfs:label>has maximum stacks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMythicalTier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasMythicalTier">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTeamDamageType -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTeamDamageType">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has team damage type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTier">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>All items are of tiers 1 through 4, where:
+tier 1: Basic item
+tier 2: Advanced item
+tier 3: legendary item
+tier 4: mythical item</rdfs:comment>
+        <rdfs:label>has tier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>assassin</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">champion type that is used for burst damage</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>attack item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item that has physical damage statistics</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/playsRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>champion</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a player-controlled character, who begins each game at level 1 and has a maximum level of 18</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ChampionSpecific -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ChampionSpecific">
+        <rdfs:label>champion-specific</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Character -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Character">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fibo-fnd-utl-av:adaptedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dictionary.cambridge.org/us/dictionary/english/character</fibo-fnd-utl-av:adaptedFrom>
+        <rdfs:label>character</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a fictitious person represented in a movie, play, or story</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ConsumableItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ConsumableItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ToolItem"/>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/TrinketItem"/>
+        <rdfs:label>consumable item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item that can be activated for some temporary effects</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/DefenseItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/DefenseItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>defense item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item that has defensive statistics</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>fighter</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">champion type that is main attacking and usually melee</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoldCost"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTier"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">179</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasTier"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact or object that is from Runeterran history and is featured in-game as an enhancement for a character</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>mage</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">champion type that are powerful spellcasters who use their abilities to deal magic damage and disrupt enemies </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>magic item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item that has magic damage statistics</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>marksman</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">champion type that primarily uses their ranged basic attacks to deal sustained physical damage to single targets</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>movement item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item that boosts the movement speed statistic</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Player -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Player">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person"/>
+        <fibo-fnd-utl-av:adaptedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.merriam-webster.com/dictionary/player</fibo-fnd-utl-av:adaptedFrom>
+        <rdfs:label>player</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a person who plays a game</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/StarterItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/StarterItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>starter item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a type of item that is good to buy first in a game</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Statistic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AbilityPower"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Armor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ArmorPenetration"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackDamage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackRange"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackSpeed"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CooldownReduction"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeChance"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeDamage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Health"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/HealthRegeration"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/LifeSteal"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicPenetration"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MagicResistance"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mana"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ManaRegeneration"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/MovementSpeed"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SpellVamp"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tenacity"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/AttackSpeed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">250</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CooldownReduction"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">45</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeChance"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/CriticalStrikeDamage"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">250</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>statistic</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number that indicates how well a champion can do a certain thing</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>supporting champion</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">champion type that disrupts enemies and protects allies</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank">
+        <rdfs:subClassOf rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole"/>
+        <rdfs:label>tank</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">champion type that has high health and low damage ouput</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team">
+        <rdfs:label>team</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ToolItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ToolItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <rdfs:label>tool item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item category that encompasses trinket and consumable items</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Transformation -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Transformation"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/TrinketItem -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/TrinketItem">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/ToolItem"/>
+        <rdfs:label>trinket item</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">items that take up the single trinket slot in a players inventory, and provide vision of the map</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/UniqueStatistic -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/UniqueStatistic">
+        <rdfs:label>unique statistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent -->
+
+    <owl:Class rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/AutonomousAgent"/>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person -->
+
+    <owl:Class rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/Person"/>
+    
+
+
+    <!-- http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole -->
+
+    <owl:Class rdf:about="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/PartyInRole">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,38 @@
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?subject ?object
+	WHERE { ?subject rdfs:subClassOf ?object }
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?subject ?object
+	WHERE { ?subject rdfs:subClassOf ?object . } limit 10
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT distinct ?root where{
+	?c a owl:Class;
+		rdfs:subClassOf*?root.
+	optional{
+		?root rdfs:subClassOf?superRoot.
+	}
+	FILTER(!bound(?superRoot) && isIRI(?root))
+}
+
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX app: <http://example.org/ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+CONSTRUCT { ?s ?p ?o } WHERE { 
+     GRAPH ?g { ?s ?p ?o } . ?g dc:publisher <http://www.w3.org/> . 
+    ?g dc:date ?date . 
+    FILTER ( ?date > "2005-02-28T00:00:00Z"^^xsd:dateTime ) . }
