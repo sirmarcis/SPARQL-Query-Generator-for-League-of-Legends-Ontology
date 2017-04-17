@@ -1,0 +1,797 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind#"
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:lol="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:lol-ind="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind">
+        <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/OE_9_LeagueOfLegends/LeagueOfLegends-Ind"/>
+        <owl:imports rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"/>
+        <rdfs:label>league of legends individuals ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/buildsInto -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/buildsInto"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasChampion -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasChampion"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasRole"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/nextItemInBuild -->
+
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/nextItemInBuild"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasDamageTypeString -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasDamageTypeString"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoldCost -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasGoldCost"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasItemIdentifier"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood -->
+
+    <owl:DatatypeProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/hasLikelihood"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank"/>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Azir -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Azir">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMageLikelihood"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMarksmanLikelihood"/>
+        <terms:alternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">birdman</terms:alternative>
+        <terms:alternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emporer</terms:alternative>
+        <terms:alternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shurima</terms:alternative>
+        <terms:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>azir</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ranged mage, does DPS magic damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMageLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMageLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</lol:hasLikelihood>
+        <rdfs:label>azir mage likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMarksmanLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/AzirMarksmanLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</lol:hasLikelihood>
+        <rdfs:label>azir marksman likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BFSword -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BFSword">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/InfinityEdge"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</lol:hasItemIdentifier>
+        <rdfs:label>bf sword</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BFSword2 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BFSword2">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TheBloodthirster"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</lol:hasItemIdentifier>
+        <rdfs:label>bf sword 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BerzerkersGreaves -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BerzerkersGreaves">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BrawlersGloves"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger2"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger3"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</lol:hasItemIdentifier>
+        <rdfs:label>berzerkers greaves</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BootsOfSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BootsOfSpeed">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BerzerkersGreaves"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</lol:hasItemIdentifier>
+        <rdfs:label>boots of speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BrawlersGloves -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BrawlersGloves">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</lol:hasItemIdentifier>
+        <rdfs:label>brawlers gloves</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BrawlersGloves2 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BrawlersGloves2">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal2"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</lol:hasItemIdentifier>
+        <rdfs:label>brawlers gloves 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/CloakOfAgility -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/CloakOfAgility">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/InfinityEdge"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</lol:hasItemIdentifier>
+        <rdfs:label>cloak of agility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RecurveBow"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger2 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger2">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RecurveBow"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger3 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger3">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger4 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger4">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal2"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger5 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger5">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/KircheisShard"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/DoransBlade -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/DoransBlade">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/HealthPotion"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/HealthPotion2"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</lol:hasItemIdentifier>
+        <rdfs:label>dorans blade</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Garen -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Garen">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenFighterLikelihood"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenTankLikelihood"/>
+        <terms:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>garen</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melee tank, does physical damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenFighterLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenFighterLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</lol:hasLikelihood>
+        <rdfs:label>garen fighter likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenTankLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GarenTankLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Tank"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoneDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</lol:hasLikelihood>
+        <rdfs:label>garen tank likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GiantSlayer -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GiantSlayer">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LordDominiksRegards"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</lol:hasItemIdentifier>
+        <rdfs:label>giant slayer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/HealthPotion -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/HealthPotion">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/WardingTotem"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</lol:hasItemIdentifier>
+        <rdfs:label>health potion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/HealthPotion2 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/HealthPotion2">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/WardingTotem"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</lol:hasItemIdentifier>
+        <rdfs:label>health potion 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/InfinityEdge -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/InfinityEdge">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BootsOfSpeed"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3600</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</lol:hasItemIdentifier>
+        <rdfs:label>infinity edge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Jinx -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Jinx">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/JinxMarksmanLikelihood"/>
+        <terms:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>jinx</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marksman, adc, does physical damage through autoattacks, hypercarry</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/JinxMarksmanLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/JinxMarksmanLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Marksman"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</lol:hasLikelihood>
+        <rdfs:label>jinx marksman likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/KircheisShard -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/KircheisShard">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RapidFirecannon"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</lol:hasItemIdentifier>
+        <rdfs:label>kircheis shard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LastWhisper -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LastWhisper">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LordDominiksRegards"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</lol:hasItemIdentifier>
+        <rdfs:label>last whisper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LastWhisper"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword2 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword2">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/GiantSlayer"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword3 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword3">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TheBloodthirster"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword4 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword4">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/VampiricScepter"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LordDominiksRegards -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LordDominiksRegards">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BFSword2"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword3"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword4"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2700</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</lol:hasItemIdentifier>
+        <rdfs:label>lord dominiks regards</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Nidalee -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Nidalee">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeAssassinLikelihood"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeMageLikelihood"/>
+        <terms:alternative rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nid</terms:alternative>
+        <terms:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>nidalee</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ranged and melee mage, high burst damage, commonly a jungler</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeAssassinLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeAssassinLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Assassin"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</lol:hasLikelihood>
+        <rdfs:label>nidalee assassin likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeMageLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/NidaleeMageLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Mage"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</lol:hasLikelihood>
+        <rdfs:label>nidalee mage likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Pickaxe -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Pickaxe">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/InfinityEdge"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">875</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</lol:hasItemIdentifier>
+        <rdfs:label>pickaxe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RapidFirecannon -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RapidFirecannon">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/LongSword2"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</lol:hasItemIdentifier>
+        <rdfs:label>rapid firecannon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RecurveBow -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RecurveBow">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RunnansHurricane"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</lol:hasItemIdentifier>
+        <rdfs:label>recurve bow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RunnansHurricane -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RunnansHurricane">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BrawlersGloves2"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger4"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Dagger5"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134</lol:hasItemIdentifier>
+        <rdfs:label>runnans hurricane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TeamOne -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TeamOne">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Team"/>
+        <lol:hasChampion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Azir"/>
+        <lol:hasChampion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Garen"/>
+        <lol:hasChampion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Jinx"/>
+        <lol:hasChampion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Nidalee"/>
+        <lol:hasChampion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Thresh"/>
+        <terms:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">League of Legends Player and Plugin</terms:coverage>
+        <rdfs:label>team one</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TheBloodthirster -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TheBloodthirster">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3700</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</lol:hasItemIdentifier>
+        <rdfs:label>the bloodthirster</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Thresh -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Thresh">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Champion"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshFighterLikelihood"/>
+        <lol:hasRole rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshSupportLikelihood"/>
+        <terms:coverage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>thresh</rdfs:label>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melee support, single target cc, physical damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshFighterLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshFighterLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Fighter"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</lol:hasLikelihood>
+        <rdfs:label>thresh fighter likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshSupportLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/ThreshSupportLikelihood">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/SupportingChampion"/>
+        <lol:hasDamageTypeString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoneDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</lol:hasLikelihood>
+        <rdfs:label>thresh support likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/VampiricScepter -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/VampiricScepter">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/TheBloodthirster"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">169</lol:hasItemIdentifier>
+        <rdfs:label>vampiric scepter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/WardingTotem -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/WardingTotem">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/BFSword"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/CloakOfAgility"/>
+        <lol:nextItemInBuild rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Pickaxe"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</lol:hasItemIdentifier>
+        <rdfs:label>warding totem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RunnansHurricane"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">176</lol:hasItemIdentifier>
+        <rdfs:label>zeal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal2 -->
+
+    <owl:NamedIndividual rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/Zeal2">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/Item"/>
+        <lol:buildsInto rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/RapidFirecannon"/>
+        <lol:hasGoldCost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">176</lol:hasItemIdentifier>
+        <rdfs:label>zeal 2</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
