@@ -20,27 +20,27 @@
     <!ENTITY fibo-fnd-acc-cur "http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/" >
 	<!ENTITY lol "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" >
 ]>
-<rdf:RDF xmlns="&lol;"
-     xml:base="&lol;"
-     xmlns:lol="&lol;"
-     xmlns:fibo-fnd-aap-agt="&fibo-fnd-aap-agt;"
-     xmlns:sm="&sm;"
-     xmlns:fibo-fnd-qt-qtu="&fibo-fnd-qt-qtu;"
-     xmlns:fibo-fnd-utl-av="&fibo-fnd-utl-av;"
-     xmlns:fibo-fnd-pty-rl="&fibo-fnd-pty-rl;"
-     xmlns:fibo-fnd-pty-pty="&fibo-fnd-pty-pty;"
+<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:lol="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:fibo-fnd-aap-agt="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/Agents/"
+     xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata/"
+     xmlns:fibo-fnd-qt-qtu="http://www.omg.org/spec/EDMC-FIBO/FND/Quantities/QuantitiesAndUnits/"
+     xmlns:fibo-fnd-utl-av="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/"
+     xmlns:fibo-fnd-pty-rl="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/"
+     xmlns:fibo-fnd-pty-pty="http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Parties/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:fibo-fnd-rel-rel="&fibo-fnd-rel-rel;"
-     xmlns:fibo-fnd-plc-vrt="&fibo-fnd-plc-vrt;"
-     xmlns:fibo-fnd-plc-loc="&fibo-fnd-plc-loc;"
-     xmlns:rdfs="&rdfs;"
-     xmlns:fibo-fnd-acc-cur="&fibo-fnd-acc-cur;"
-     xmlns:dct="&dct;"
-     xmlns:xsd="&xsd;"
-     xmlns:owl="&owl;"
-     xmlns:rdf="&rdf;"
-     xmlns:fibo-fnd-aap-ppl="&fibo-fnd-aap-ppl;"
-     xmlns:skos="&skos;">
+     xmlns:fibo-fnd-rel-rel="http://www.omg.org/spec/EDMC-FIBO/FND/Relations/Relations/"
+     xmlns:fibo-fnd-plc-vrt="http://www.omg.org/spec/EDMC-FIBO/FND/Places/VirtualPlaces/"
+     xmlns:fibo-fnd-plc-loc="http://www.omg.org/spec/EDMC-FIBO/FND/Places/Locations/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:fibo-fnd-acc-cur="http://www.omg.org/spec/EDMC-FIBO/FND/Accounting/CurrencyAmount/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:fibo-fnd-aap-ppl="http://www.omg.org/spec/EDMC-FIBO/FND/AgentsAndPeople/People/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="&lol;">
         <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/OE_9_LeagueOfLegends/"/>
         <owl:imports rdf:resource="&fibo-fnd-pty-pty;"/>

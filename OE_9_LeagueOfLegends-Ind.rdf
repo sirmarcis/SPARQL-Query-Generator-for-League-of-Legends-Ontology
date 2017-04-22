@@ -6,23 +6,25 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY AnnotationVocabulary "http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/">
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
 	<!ENTITY lol "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" >
     <!ENTITY lol-ind "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" >
 ]>
 
-<rdf:RDF xmlns="&lol-ind;#"
-     xml:base="&lol-ind;"
-     xmlns:lol="&lol;"
-     xmlns:rdfs="&rdfs;"
-     xmlns:terms="&dct;"
-     xmlns:xsd="&xsd;"
-     xmlns:owl="&owl;"
-     xmlns:lol-ind="&lol-ind;#"
-     xmlns:rdf="&rdf;"
+<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind#"
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind"
+     xmlns:lol="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:AnnotationVocabulary="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:lol-ind="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:skos="&skos;">
-    <owl:Ontology rdf:about="&lol-ind;">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind">
         <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/OE_9_LeagueOfLegends-Ind"/>
         <owl:imports rdf:resource="&lol;"/>
         <terms:modified rdf:datatype="&xsd;dateTimeStamp">April 7, 2017</terms:modified>
