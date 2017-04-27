@@ -319,7 +319,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
         Pair<ArrayList<String>, Integer> cLineArgs = readCommandLineArgs(args);
         String ontologyFile = getOntologyArg(args);
         if(cLineArgs.cdr() == -1) // return failure if invalid command line args
