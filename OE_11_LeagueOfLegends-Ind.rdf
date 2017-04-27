@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY AnnotationVocabulary "http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/">
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY lol "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" >
+    <!ENTITY lol-ind "http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" >
+]>
+
+<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind#"
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind"
+     xmlns:lol="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/"
+     xmlns:AnnotationVocabulary="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:lol-ind="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind">
+        <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2017/OE_11_LeagueOfLegends/LeagueOfLegends-Ind"/>
+        <owl:imports rdf:resource="&lol;"/>
+        <terms:creator>Hannah De los Santos</terms:creator>
+        <rdfs:label>league of legends individuals ontology</rdfs:label>
+        <skos:changeNote rdf:datatype="&xsd;string">added item individuals</skos:changeNote>
+        <terms:creator>Anders Maraviglia</terms:creator>
+        <terms:abstract rdf:datatype="&xsd;string">The objective of this ontology is to provide examples and individuals for the ontology to help a new player learn the basics of playing a champion for the first time.  The basics include providing a list of recommended items to build based on the users, allied, and enemy champions, and a couple basic ability combinations the champion can do or terminology uniquely related to that champion. These suggested builds would continue throughout the game, depending on the amount of gold the user has, as well as the items the user has in their inventory at the time.</terms:abstract>
+        <AnnotationVocabulary:modifiedOn rdf:datatype="&xsd;dateTimeStamp">April 22, 2017</AnnotationVocabulary:modifiedOn>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &dct;alternative -->
+
+    <owl:AnnotationProperty rdf:about="&dct;alternative"/>
+    
+
+
+    <!-- &dct;coverage -->
+
+    <owl:AnnotationProperty rdf:about="&dct;coverage"/>
+    
+
+
+    <!-- &dct;source -->
+
+    <owl:AnnotationProperty rdf:about="&dct;source"/>
+    
+
+
+    <!-- &skos;definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol;buildsInto -->
+
+    <owl:ObjectProperty rdf:about="&lol;buildsInto"/>
+    
+
+
+    <!-- &lol;hasChampion -->
+
+    <owl:ObjectProperty rdf:about="&lol;hasChampion"/>
+    
+
+
+    <!-- &lol;hasRole -->
+
+    <owl:ObjectProperty rdf:about="&lol;hasRole"/>
+    
+
+
+    <!-- &lol;nextItemInBuild -->
+
+    <owl:ObjectProperty rdf:about="&lol;nextItemInBuild"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol;hasDamageTypeString -->
+
+    <owl:DatatypeProperty rdf:about="&lol;hasDamageTypeString"/>
+    
+
+
+    <!-- &lol;hasGoldCost -->
+
+    <owl:DatatypeProperty rdf:about="&lol;hasGoldCost"/>
+    
+
+
+    <!-- &lol;hasItemIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="&lol;hasItemIdentifier"/>
+    
+
+
+    <!-- &lol;hasLikelihood -->
+
+    <owl:DatatypeProperty rdf:about="&lol;hasLikelihood"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol;Assassin -->
+
+    <owl:Class rdf:about="&lol;Assassin"/>
+    
+
+
+    <!-- &lol;Champion -->
+
+    <owl:Class rdf:about="&lol;Champion"/>
+    
+
+
+    <!-- &lol;Fighter -->
+
+    <owl:Class rdf:about="&lol;Fighter"/>
+    
+
+
+    <!-- &lol;Item -->
+
+    <owl:Class rdf:about="&lol;Item"/>
+    
+
+
+    <!-- &lol;Mage -->
+
+    <owl:Class rdf:about="&lol;Mage"/>
+    
+
+
+    <!-- &lol;Marksman -->
+
+    <owl:Class rdf:about="&lol;Marksman"/>
+    
+
+
+    <!-- &lol;SupportingChampion -->
+
+    <owl:Class rdf:about="&lol;SupportingChampion"/>
+    
+
+
+    <!-- &lol;Tank -->
+
+    <owl:Class rdf:about="&lol;Tank"/>
+    
+
+
+    <!-- &lol;Team -->
+
+    <owl:Class rdf:about="&lol;Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- &lol-ind;Azir -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Azir">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;AzirMageLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;AzirMarksmanLikelihood"/>
+        <terms:alternative rdf:datatype="&xsd;string">birdman</terms:alternative>
+        <terms:alternative rdf:datatype="&xsd;string">emporer</terms:alternative>
+        <terms:alternative rdf:datatype="&xsd;string">shurima</terms:alternative>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>azir</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">ranged mage, does DPS magic damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;AzirMageLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;AzirMageLikelihood">
+        <rdf:type rdf:resource="&lol;Mage"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">70</lol:hasLikelihood>
+        <rdfs:label>azir mage likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;AzirMarksmanLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;AzirMarksmanLikelihood">
+        <rdf:type rdf:resource="&lol;Marksman"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">30</lol:hasLikelihood>
+        <rdfs:label>azir marksman likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;BFSword -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;BFSword">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;InfinityEdge"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">12</lol:hasItemIdentifier>
+        <rdfs:label>bf sword</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;BFSword2 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;BFSword2">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;TheBloodthirster"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">12</lol:hasItemIdentifier>
+        <rdfs:label>bf sword 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;BerzerkersGreaves -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;BerzerkersGreaves">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;BrawlersGloves"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;Dagger"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;Dagger2"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;Dagger3"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1100</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">16</lol:hasItemIdentifier>
+        <rdfs:label>berzerkers greaves</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;BootsOfSpeed -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;BootsOfSpeed">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;BerzerkersGreaves"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">21</lol:hasItemIdentifier>
+        <rdfs:label>boots of speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;BrawlersGloves -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;BrawlersGloves">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;Zeal"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">400</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">23</lol:hasItemIdentifier>
+        <rdfs:label>brawlers gloves</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;BrawlersGloves2 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;BrawlersGloves2">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;Zeal2"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">400</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">23</lol:hasItemIdentifier>
+        <rdfs:label>brawlers gloves 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;CloakOfAgility -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;CloakOfAgility">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;InfinityEdge"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">800</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">28</lol:hasItemIdentifier>
+        <rdfs:label>cloak of agility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Dagger -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Dagger">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;RecurveBow"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Dagger2 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Dagger2">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;RecurveBow"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Dagger3 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Dagger3">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;Zeal"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Dagger4 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Dagger4">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;Zeal2"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Dagger5 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Dagger5">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;KircheisShard"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">34</lol:hasItemIdentifier>
+        <rdfs:label>dagger 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;DoransBlade -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;DoransBlade">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;HealthPotion"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;HealthPotion2"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">450</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">39</lol:hasItemIdentifier>
+        <rdfs:label>dorans blade</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Garen -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Garen">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;GarenFighterLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;GarenTankLikelihood"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>garen</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">melee tank, does physical damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;GarenFighterLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;GarenFighterLikelihood">
+        <rdf:type rdf:resource="&lol;Fighter"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">20</lol:hasLikelihood>
+        <rdfs:label>garen fighter likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;GarenTankLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;GarenTankLikelihood">
+        <rdf:type rdf:resource="&lol;Tank"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">NoneDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">80</lol:hasLikelihood>
+        <rdfs:label>garen tank likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;GiantSlayer -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;GiantSlayer">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;LordDominiksRegards"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1000</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">62</lol:hasItemIdentifier>
+        <rdfs:label>giant slayer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;HealthPotion -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;HealthPotion">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;WardingTotem"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">50</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">68</lol:hasItemIdentifier>
+        <rdfs:label>health potion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;HealthPotion2 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;HealthPotion2">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;WardingTotem"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">50</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">68</lol:hasItemIdentifier>
+        <rdfs:label>health potion 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;InfinityEdge -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;InfinityEdge">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;BootsOfSpeed"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">3600</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">78</lol:hasItemIdentifier>
+        <rdfs:label>infinity edge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Jinx -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Jinx">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;JinxMarksmanLikelihood"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>jinx</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">marksman, adc, does physical damage through autoattacks, hypercarry</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;JinxMarksmanLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;JinxMarksmanLikelihood">
+        <rdf:type rdf:resource="&lol;Marksman"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">100</lol:hasLikelihood>
+        <rdfs:label>jinx marksman likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;KircheisShard -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;KircheisShard">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;RapidFirecannon"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">750</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">82</lol:hasItemIdentifier>
+        <rdfs:label>kircheis shard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;LastWhisper -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;LastWhisper">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;LordDominiksRegards"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">84</lol:hasItemIdentifier>
+        <rdfs:label>last whisper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;LongSword -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;LongSword">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;LastWhisper"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;LongSword2 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;LongSword2">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;GiantSlayer"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;LongSword3 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;LongSword3">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;TheBloodthirster"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;LongSword4 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;LongSword4">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;VampiricScepter"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">350</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">88</lol:hasItemIdentifier>
+        <rdfs:label>long sword 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;LordDominiksRegards -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;LordDominiksRegards">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;BFSword2"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;LongSword3"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;LongSword4"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">2700</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">89</lol:hasItemIdentifier>
+        <rdfs:label>lord dominiks regards</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Nidalee -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Nidalee">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;NidaleeAssassinLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;NidaleeMageLikelihood"/>
+        <terms:alternative rdf:datatype="&xsd;string">nid</terms:alternative>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>nidalee</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">ranged and melee mage, high burst damage, commonly a jungler</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;NidaleeAssassinLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;NidaleeAssassinLikelihood">
+        <rdf:type rdf:resource="&lol;Assassin"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">40</lol:hasLikelihood>
+        <rdfs:label>nidalee assassin likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;NidaleeMageLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;NidaleeMageLikelihood">
+        <rdf:type rdf:resource="&lol;Mage"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">MagicDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">60</lol:hasLikelihood>
+        <rdfs:label>nidalee mage likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Pickaxe -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Pickaxe">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;InfinityEdge"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">875</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">115</lol:hasItemIdentifier>
+        <rdfs:label>pickaxe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;RapidFirecannon -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;RapidFirecannon">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;LongSword"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;LongSword2"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">2600</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">122</lol:hasItemIdentifier>
+        <rdfs:label>rapid firecannon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;RecurveBow -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;RecurveBow">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;RunnansHurricane"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1000</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">125</lol:hasItemIdentifier>
+        <rdfs:label>recurve bow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;RunnansHurricane -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;RunnansHurricane">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;BrawlersGloves2"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;Dagger4"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;Dagger5"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">2600</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">134</lol:hasItemIdentifier>
+        <rdfs:label>runnans hurricane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;TeamOne -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;TeamOne">
+        <rdf:type rdf:resource="&lol;Team"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Azir"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Garen"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Jinx"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Nidalee"/>
+        <lol:hasChampion rdf:resource="&lol-ind;Thresh"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <rdfs:label>team one</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;TheBloodthirster -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;TheBloodthirster">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">3700</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">159</lol:hasItemIdentifier>
+        <rdfs:label>the bloodthirster</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Thresh -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Thresh">
+        <rdf:type rdf:resource="&lol;Champion"/>
+        <lol:hasRole rdf:resource="&lol-ind;ThreshFighterLikelihood"/>
+        <lol:hasRole rdf:resource="&lol-ind;ThreshSupportLikelihood"/>
+        <terms:coverage rdf:datatype="&xsd;string">League of Legends Player and Plugin</terms:coverage>
+        <terms:source rdf:datatype="&xsd;string">Riot Games, Inc. (2016). Champion Grid [Online]. Avaliable: http://gameinfo.na.leagueoflegends.com/en/game-info/champions/</terms:source>
+        <rdfs:label>thresh</rdfs:label>
+        <skos:definition rdf:datatype="&xsd;string">melee support, single target cc, physical damage</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;ThreshFighterLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;ThreshFighterLikelihood">
+        <rdf:type rdf:resource="&lol;Fighter"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">AttackDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">20</lol:hasLikelihood>
+        <rdfs:label>thresh fighter likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;ThreshSupportLikelihood -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;ThreshSupportLikelihood">
+        <rdf:type rdf:resource="&lol;SupportingChampion"/>
+        <lol:hasDamageTypeString rdf:datatype="&xsd;string">NoneDamageType</lol:hasDamageTypeString>
+        <lol:hasLikelihood rdf:datatype="&xsd;integer">80</lol:hasLikelihood>
+        <rdfs:label>thresh support likelihood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;VampiricScepter -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;VampiricScepter">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;TheBloodthirster"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">900</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">169</lol:hasItemIdentifier>
+        <rdfs:label>vampiric scepter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;WardingTotem -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;WardingTotem">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;BFSword"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;CloakOfAgility"/>
+        <lol:nextItemInBuild rdf:resource="&lol-ind;Pickaxe"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">0</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">172</lol:hasItemIdentifier>
+        <rdfs:label>warding totem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Zeal -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Zeal">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;RunnansHurricane"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">176</lol:hasItemIdentifier>
+        <rdfs:label>zeal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &lol-ind;Zeal2 -->
+
+    <owl:NamedIndividual rdf:about="&lol-ind;Zeal2">
+        <rdf:type rdf:resource="&lol;Item"/>
+        <lol:buildsInto rdf:resource="&lol-ind;RapidFirecannon"/>
+        <lol:hasGoldCost rdf:datatype="&xsd;integer">1300</lol:hasGoldCost>
+        <lol:hasItemIdentifier rdf:datatype="&xsd;integer">176</lol:hasItemIdentifier>
+        <rdfs:label>zeal 2</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
