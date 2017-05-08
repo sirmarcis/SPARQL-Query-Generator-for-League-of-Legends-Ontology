@@ -49,3 +49,71 @@ WHERE { ?item lol:nextItemInBuild ?nextItem.
     ?nextItem lol:hasGoldCost ?goldCost.
     filter (?goldCost <= 500)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ITEM SELECTION QUERIES:  use these queries to make templates for general item selection.
+
+Having selected a role for the champion to play from previous queries, now find what stats that champion wants to maximize in their build.
+
+BLURB: This query gets the stats a champion cares about maximizing in their build.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fibo-fnd-pty-rl: <http://www.omg.org/spec/EDMC-FIBO/FND/Parties/Roles/>
+PREFIX lol: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/>
+PREFIX lol-ind: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/>
+SELECT distinct ?champion ?roleType ?statType where{ 
+	?champion a lol:Champion.
+	?champion fibo-fnd-pty-rl:playsRole ?role.
+	?role lol:hasRoleSpecificStatistic ?stat.
+	?role rdf:type ?roleType.
+	?stat lol:hasGoalStatisticValue ?goalStat.
+	?stat rdf:type ?statType.
+	FILTER(?goalStat = 1).
+	FILTER(?statType != owl:NamedIndividual && ?roleType = lol:Marksman && ?champion = lol-ind:Jinx)
+}
+
+After finding which stats to maximize, go through all items and pick out (complete) items that have stats that champion cares about having.
+
+BLURB: This query returns items that have stats we care about maximizing for  the champion Jinx.  In this example, the items 'Infinity Edge' and 'Warmogs Armor' have stats in the ontology, but only the former has stats that are relevant for the build.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX lol: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/>
+PREFIX lol-ind: <http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/>
+SELECT ?item ?cost ?stat ?statType
+WHERE {
+	?item a lol:Item. 
+	?item lol:hasGoldCost ?cost.
+	?item lol:hasAdvancedTier ?aTier.
+	?item lol:hasLegendaryTier ?bTier.
+	?item lol:hasMythicalTier ?cTier.
+	FILTER (?aTier = 1 || ?bTier = 1 || ?cTier = 1).
+	?item lol:hasStatistic ?stat.
+	?stat rdf:type ?statType.
+	FILTER (?statType != owl:NamedIndividual).
+	FILTER(?statType = lol:AttackDamage || ?statType = lol:AttackSpeed || ?statType = lol:ArmorPenetration)
+} group by ?item ?cost ?stat ?statType limit 10
+
+
+
+
+
+
+

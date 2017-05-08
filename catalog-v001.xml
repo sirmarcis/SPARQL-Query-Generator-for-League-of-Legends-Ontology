@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_9_LeagueOfLegends-Ind.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_10_LeagueOfLegends-Ind.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_11_LeagueOfLegends-Ind_V2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_8_LeagueOfLegends-Ind.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_11_LeagueOfLegends-Ind.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_12_LeagueOfLegends-Ind.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_12_LeagueOfLegends-ind_OLD.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_12_LeagueOfLegends-Ind_ELISA.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_13_LeagueOfLegends-Ind.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_12_LeagueOfLegends_OLD.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_8_LeagueOfLegends_V2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_13_LeagueOfLegends.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_11_LeagueOfLegends.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_9_LeagueOfLegends.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_8_LeagueOfLegends.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_9_LeagueOfLegends_V2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_13_LeagueOfLegends_V2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_12_LeagueOfLegends.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_10_LeagueOfLegends.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="apache-jena-3.2.0/src-examples/jena-examples/src/main/resources/data/pizza.owl.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="http://www.eswc2006.org/technologies/ontology" uri="apache-jena-3.2.0/src-examples/data/eswc-2006-09-21.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="http://www.xfront.com/owl/ontologies/camera/" uri="apache-jena-3.2.0/src-examples/data/camera.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="urn:x-hp-jena:test1" uri="apache-jena-3.2.0/src-examples/data/test1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1494092930170" name="urn:x-hp-jena:test2" uri="apache-jena-3.2.0/src-examples/data/test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_9_LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_10_LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_11_LeagueOfLegends-Ind_V2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_8_LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind" uri="OE_11_LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_12_LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_13_LeagueOfLegends-Ind_ORG.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_12_LeagueOfLegends-ind_OLD.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_12_LeagueOfLegends-Ind_ELISA.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends-Ind/" uri="OE_13_LeagueOfLegends-Ind.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_12_LeagueOfLegends_OLD.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_8_LeagueOfLegends_V2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_13_LeagueOfLegends.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_11_LeagueOfLegends.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_9_LeagueOfLegends.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_8_LeagueOfLegends.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_9_LeagueOfLegends_V2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_13_LeagueOfLegends_V2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_12_LeagueOfLegends.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="duplicate:http://tw.rpi.edu/web/Courses/Ontologies/2017/LeagueOfLegends/LeagueOfLegends/" uri="OE_10_LeagueOfLegends.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="apache-jena-3.2.0/src-examples/jena-examples/src/main/resources/data/pizza.owl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="http://www.eswc2006.org/technologies/ontology" uri="apache-jena-3.2.0/src-examples/data/eswc-2006-09-21.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="http://www.xfront.com/owl/ontologies/camera/" uri="apache-jena-3.2.0/src-examples/data/camera.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="urn:x-hp-jena:test1" uri="apache-jena-3.2.0/src-examples/data/test1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494184652054" name="urn:x-hp-jena:test2" uri="apache-jena-3.2.0/src-examples/data/test2.owl"/>
     </group>
 </catalog>

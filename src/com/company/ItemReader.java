@@ -5,6 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
+import org.apache.jena.atlas.lib.Pair;
+import org.apache.jena.base.Sys;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.ontology.*;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -53,10 +59,15 @@ public class ItemReader {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        for(String currStatName : allStatTypes){
-            System.out.println("stat: " + currStatName);
-        }
-        System.out.println("len of allStatTypes: " + allStatTypes.size());
         return allItemHash;
+    }
+
+    public static void addItemStatsToModel(HashMap<String, LeagueItem> allItemHash, Model model){
+        NodeIterator itr = model.listObjects();
+        while(itr.hasNext()){
+            RDFNode currNode = itr.next();
+            if(currNode.isLiteral())
+                System.out.println("literal?[" + currNode.isLiteral() + "] elt: " + currNode.asLiteral().getString());
+        }
     }
 }

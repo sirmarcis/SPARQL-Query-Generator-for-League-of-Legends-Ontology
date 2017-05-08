@@ -2,15 +2,15 @@ package com.company;
 
 import org.apache.jena.atlas.lib.Pair;
 import org.apache.jena.base.Sys;
+import org.apache.jena.ontology.OntDocumentManager;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdf.model.impl.LiteralImpl;
 import org.apache.jena.util.FileManager;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -65,7 +65,13 @@ public class Main {
         return ontologyFile;
     }
 
-
+    private static OntModel loadOntology(String ontFilepath){
+        //OntDocumentManager mgr = new OntDocumentManager();
+        OntModel ontMod = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_RULE_INF);
+        InputStream in = FileManager.get().open(ontFilepath);
+        ontMod.read(in, null, "TURTLE");
+        return ontMod;
+    }
 
     public static void main(String[] args) {
         Pair<ArrayList<String>, Integer> cLineArgs = readCommandLineArgs(args);
@@ -73,10 +79,12 @@ public class Main {
         if(cLineArgs.cdr() == -1) // return failure if invalid command line args
             return;
         HashMap<String, LeagueItem> allItemHash = ItemReader.readInItems(System.getProperty("user.dir"));
+
         String modelFilepath = System.getProperty("user.dir") + "/" + ontologyFile; // "/OE_11_LeagueOfLegends-Ind_V2.ttl";
-        System.out.println("Model Filepath = " + modelFilepath);
-        FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        Model model = FileManager.get().loadModel(modelFilepath, null, "TURTLE");
+        OntModel model = loadOntology(modelFilepath); // load on ontology model
+        //FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
+        //Model model = FileManager.get().loadModel(modelFilepath, null, "TURTLE");
+        //ItemReader.addItemStatsToModel(allItemHash, model);
 
         int goldAvailable = cLineArgs.cdr(); // 3600;
         int inventorySpace = 20; // currently static..
